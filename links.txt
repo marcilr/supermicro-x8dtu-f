@@ -1,0 +1,12 @@
+links.txt
+Created Thu Feb 15 14:54:50 AKST 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+X8DTU-F related links
+
+
+Links
+=====
+X8DTU-F
+http://www.supermicro.com/products/motherboard/QPI/5500/X8DTU-F.cfm
