@@ -1,0 +1,150 @@
+X8DTU-F.txt
+Created Thu Feb 15 14:52:39 AKST 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+X8DTU-F
+
+
+cpu:     Two Intel 5500/5600 Series (LGA 1366) processors; each
+         processor supports two full-width Intel QuickPath Interconnect
+         (QPI) links with a total of up to 51.2 GT/s Data Transfer Rate
+         (6.4 GT/s per direction)
+         X8DTU-F User's Manual, MNL-1081.pdf, p. 6
+
+         Description (from auction receipt):
+           Processor Type:        Intel Xeon L5640 (Low Power) Hex (6) Core
+           Processor Speed:       2.26GHz
+           Number of Processors:  2
+
+         o Four processor cores in each processor with 8MB shared
+           cache among cores
+           X8DTU-F User's Manual, MNL-1081.pdf, p. 9
+
+         o Virtualization Technology, Integrated Management Engine supported
+           X8DTU-F User's Manual, MNL-1081.pdf, p. 9
+
+
+chipset: Intel 5520 chipset, including: the 5520 (North Bridge)
+         and the ICH10R (South Bridge).
+         X8DTU-F User's Manual, MNL-1081.pdf, p. 6
+
+bios:    32 Mb AMI SPI Flash ROM
+
+ram:     Twelve 240-pin DIMM sockets support up to 192 GB* of
+         DDR3 Registered ECC or up to 48 GB of Unbuffered ECC/Non-ECC
+         DDR3 1333 MHz/1066 MHz/800 MHz in 12 DIMM modules. (*Refer to
+         Supermicro's memory recommendation list posted on our website
+         at www.supermicro.com. See Section 2-4 in Chapter 2 for DIMM
+         Slot Population.)
+         X8DTU-F User's Manual, MNL-1081.pdf, p. 6
+
+lan:     2x Intel 82576 Giga-bit
+
+sata:    6x SATA ports, Intel ICH10R
+
+slots:   1x PCI-E 2.0 x16 slot
+         1x PCI-E 2.0 x8 slot
+         1x PCI-E 2.0 x8 in x4 slot
+         X8DTU-F User's Manual, MNL-1081.pdf, p. 6
+
+back panel connectors:
+         1. Keyboard (Purple)
+         2. PS/2 Mouse (Green)
+         3. Back Panel USB Port 0
+         4. Back Panel USB Port 1
+         5. IPMI_Dedicated LAN (X8DTU-F)
+         6. COM Port 1 (Turquoise)
+         7. VGA (Blue)
+         8. Gigabit LAN 1
+         9. Gigabit LAN 2
+         10. UID Switch
+         X8DTU-F User's Manual, MNL-1081.pdf, p. 34
+
+bootable USB:
+         Yes, the X8DTU-F does appear to support bootable USB.
+         X8DTU-F User's Manual, MNL-1081.pdf, p. 60
+
+         "Technically your best option for any "appliance-style" OS like
+         FreeNAS or ESXi is a SATA DOM (Disk on Module) or SSD, as they'll
+         be more reliable.
+
+         The USB drive is the economical choice to avoid the moving parts
+         and wasted space of an HDD, since FreeNAS is only ~4GB in size 
+         (although 9.3 uses ZFS for its boot system, so it will grow with
+         each update snapshot) and it doesn't make sense to use a 250GB+
+         drive for that.
+
+         For a homelab, use a USB drive and back up your configuration
+         regularly. For anything more commercial you should ante up to
+         SATA DOM or SSD."
+         --ChrisOfAllTrades
+           https://www.reddit.com/r/homelab/comments/3i709u/why_is_installing_freenas_on_a_flash_drive_usb/
+           https://www.reddit.com/r/homelab/comments/3i709u/why_is_installing_freenas_on_a_flash_drive_usb/cudw42c/
+
+video:   1x VGA Port supported by the Winbond WPCM450 BMC Controller
+
+ipmi:    IPMI 1.5/2.0 supported
+
+
+
+Key Features
+============
+1. Intel Xeon processor 5600/5500 
+   series, with QPI up to 6.4 GT/s
+
+2. Intel 5520 (Tylersburg) Chipset
+
+3. Up to 192GB DDR3 1333/ 1066/ 800MHz
+    ECC Registered DIMM / 48GB
+    Unbuffered DIMM
+
+4. Intel 82576 Dual-Port Gigabit
+   Ethernet Controller
+
+5. 6x SATA2 (3 Gbps) Ports via
+    ICH10R Controller
+
+6. Left Side 
+     1 (x16) PCI-E 2.0 + 1 UIO or
+     1 (x16) PCI-E 2.0
+    Right Side 
+     2 LAN optional
+    For 2U configuration, Please go to
+    UIO Riser Cards page
+
+7. Integrated Matrox G200eW Graphics
+
+8. Integrated IPMI 2.0 with Dedicated LAN
+--www.supermicro.com/products/motherboard/QPI/5500/X8DTU-F.cfm
+
+
+Thu Feb 15 14:52:39 AKST 2018
+=============================
+The 2 new Supermicro SC216EL1-R1200LPB 2U 24 Bay 2.5" SFF FreeNAS System
+I purchased this morning each have a Supermicro X8DTU-F motherboard.
+
+Looks sweet.
+
+Configured as follows:
+  cpu:          Intel Xeon L5640 (Low Power) Hex (6) Core
+  cpu speed:    2.26Ghz
+  number cups:  2
+  ram type:     DDR3 SDRAM
+  ram capacity: 48GB (12x 4GB DDR3 ECC REG)
+
+
+Filelist
+========
+MNL-1081.pdf
+  X8DTU, X8DTU-F User's Manual
+  http://www.supermicro.com/support/resources/results.cfm
+  
+
+
+
+Links
+=====
+X8DTU-F
+http://www.supermicro.com/products/motherboard/QPI/5500/X8DTU-F.cfm
+
